@@ -11,12 +11,57 @@
   }
 }
 
-body {
-  background: linear-gradient(#bdd3b9, #bd5153);
-  background-attachment: fixed;
+html {
+  height:100%;
+  padding:env(safe-area-inset); /* for iphone notch */
+  -webkit-text-size-adjust:100%; /* Prevent font scaling in landscape while allowing user zoom */
 }
 
-html,
 body {
-  height: 100%;
+  position:absolute;
+  min-height:100%;
+  width:100%;
+  top:0;
+  margin:0;
+  background-color:#f1f0e9;
+  /*background: linear-gradient(#c4b9ea, #efc4e4);*/
+  background-attachment: fixed;
+  font-family:Menlo, Monaco, Consolas, Liberation Mono, Lucida Console, monospace;
+  line-height:1.4;
+  letter-spacing:-0.02em;
+  overflow-wrap: break-word;
+}
+
+h1 {
+  font-size:5em;
+  text-transform:uppercase;
+  font-style:italic;
+  letter-spacing:0.1em;
+  text-align:center;
+  padding-right:.6em;
+  margin:30px 0;
+  line-height:1em;
+  color:#99e1e6;
+  filter:
+    drop-shadow(.1em 0 0 #0066ff)
+    drop-shadow(.1em 0 0 #292cfa)
+    drop-shadow(.1em 0 0 #9b21e1)
+    drop-shadow(.1em 0 0 #dc1991)
+    drop-shadow(.1em 0 0 #eb6227)
+    drop-shadow(.1em 0 0 #e1bb32);
+}
+
+h2 {
+  margin-top:2em;
+  text-transform:uppercase;
+  font-style:italic;
+  letter-spacing:0.03em;
+  width:fit-content;
+  background-color: #2787f6;
+  background-image: linear-gradient(45deg, #2787f6, #db0cae);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
 }
