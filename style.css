@@ -46,6 +46,13 @@ h1 {
   margin:30px 0;
   line-height:1em;
   color:#99e1e6;
+  -webkit-filter:
+    drop-shadow(.1em 0 0 #0066ff)
+    drop-shadow(.1em 0 0 #292cfa)
+    drop-shadow(.1em 0 0 #9b21e1)
+    drop-shadow(.1em 0 0 #dc1991)
+    drop-shadow(.1em 0 0 #eb6227)
+    drop-shadow(.1em 0 0 #e1bb32);
   filter:
     drop-shadow(.1em 0 0 #0066ff)
     drop-shadow(.1em 0 0 #292cfa)
@@ -72,6 +79,13 @@ h2 {
 
 li {
   margin:0.3em 0;
+}
+
+img {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  max-width:100%;
 }
 
 
