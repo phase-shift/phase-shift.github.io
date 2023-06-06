@@ -29,11 +29,7 @@ body {
   font-family:Menlo, Monaco, Consolas, Liberation Mono, Lucida Console, monospace;
   line-height:1.4;
   letter-spacing:-0.02em;
-  overflow-wrap: break-word;
-}
-
-main {
-  padding-bottom:2em;
+  overflow-wrap:break-word;
 }
 
 h1 {
@@ -43,8 +39,9 @@ h1 {
   letter-spacing:0.1em;
   text-align:center;
   padding-right:.6em;
-  margin:30px 0;
+  margin:30px 0 10px;
   line-height:1em;
+  overflow-wrap:normal;
   color:#99e1e6;
   -webkit-filter:
     drop-shadow(.1em 0 0 #0066ff)
@@ -62,8 +59,29 @@ h1 {
     drop-shadow(.1em 0 0 #e1bb32);
 }
 
+nav ul {
+  list-style-type:none;
+  padding:0;
+  margin:0;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-bottom:30px;
+}
+
+nav ul li {
+  font-size:1.2em;
+  margin:6px 16px;
+  font-weight:bold;
+}
+
+nav ul li .current {
+
+}
+
 h2 {
-  margin-top:2em;
+  margin:2em auto 1.5em;
+  text-align:center;
   text-transform:uppercase;
   font-style:italic;
   letter-spacing:0.03em;
@@ -88,13 +106,24 @@ img {
   max-width:100%;
 }
 
+footer {
+  margin:3em 0 5em;
+  font-style:italic;
+  text-align:center;
+  font-size:0.9em;
+}
+
 
 
 /* FORMS */
 
 form {
-  max-width:450px;
-  margin-top:2em;
+  width:calc(100% - 10px);
+  min-width:250px;
+  max-width:440px;
+  margin:2em auto 0;
+  padding-right:7px;
+  text-align:center;
 }
 
 form label {
