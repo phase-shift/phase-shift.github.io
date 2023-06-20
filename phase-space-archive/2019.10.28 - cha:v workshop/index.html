@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>2019.10.28 - cha:v workshop - PHASE SPACE ARCHIVE</title>
+    <meta name="description" content="">
+    <meta name="author" content="None">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <link rel="stylesheet" href="../static/themes/classic/galleria.classic.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <style>
+    body::after{
+        position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+        content:url(74795232_647825772414903_5586019150150050972_n.jpg);
+    }</style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1><a href="../">PHASE SPACE ARCHIVE</a></h1>
+
+  <div class="breadcrumb">
+    <h2>
+        <a href=".">2019.10.28 - cha:v workshop</a></h2>
+  </div>
+        <hr>
+      </header>
+
+      <div id="main" role="main">
+<div class="icons">
+  <a id="fullscreen"><img src="../static/img/fullscreen.png"
+                          title="Fullscreen" alt="Fullscreen (f)" /></a>
+</div>
+<div id="gallery"></div>
+
+
+
+
+    <script src="../static/jquery-3.3.1.min.js"></script>
+    <script src="../static/galleria.min.js"></script>
+    <script src="../static/themes/classic/galleria.classic.min.js"></script>
+    <script src="../static/plugins/history/galleria.history.min.js"></script>
+    <script>
+    var data = [
+{
+        title: "74795232_647825772414903_5586019150150050972_n",
+        description: "",
+        thumb: "thumbnails/74795232_647825772414903_5586019150150050972_n.jpg",
+        image: "74795232_647825772414903_5586019150150050972_n.jpg"
+      },
+{
+        title: "75341414_388968335320384_5559678625273592107_n",
+        description: "",
+        thumb: "thumbnails/75341414_388968335320384_5559678625273592107_n.jpg",
+        image: "75341414_388968335320384_5559678625273592107_n.jpg"
+      },
+{
+        title: "83724326_592010101644993_8267770511848880182_n",
+        description: "",
+        thumb: "thumbnails/83724326_592010101644993_8267770511848880182_n.jpg",
+        image: "83724326_592010101644993_8267770511848880182_n.jpg"
+      },
+{
+        title: "P1270161",
+        description: "<div class='film-meta'><abbr title='film speed'>200</abbr><abbr title='exposure'>10/1600</abbr><abbr title='aperture'>1.7</abbr><abbr title='focal length'>25</abbr></div><abbr title='camera make and model'>Panasonic DMC-GH4</abbr><abbr title='date'>Mon Oct 28 22:40:10 2019</abbr>",
+        thumb: "thumbnails/P1270161.jpg",
+        image: "P1270161.jpg"
+      },
+{
+        title: "P1270169",
+        description: "<div class='film-meta'><abbr title='film speed'>400</abbr><abbr title='exposure'>10/500</abbr><abbr title='aperture'>1.7</abbr><abbr title='focal length'>25</abbr></div><abbr title='camera make and model'>Panasonic DMC-GH4</abbr><abbr title='date'>Mon Oct 28 22:51:40 2019</abbr>",
+        thumb: "thumbnails/P1270169.jpg",
+        image: "P1270169.jpg"
+      },
+{
+        title: "P1270180",
+        description: "<div class='film-meta'><abbr title='film speed'>200</abbr><abbr title='exposure'>10/600</abbr><abbr title='aperture'>3.5</abbr><abbr title='focal length'>25</abbr></div><abbr title='camera make and model'>Panasonic DMC-GH4</abbr><abbr title='date'>Mon Oct 28 23:04:33 2019</abbr>",
+        thumb: "thumbnails/P1270180.jpg",
+        image: "P1270180.jpg"
+      },
+{
+        title: "P1270181",
+        description: "<div class='film-meta'><abbr title='film speed'>200</abbr><abbr title='exposure'>10/1250</abbr><abbr title='aperture'>3.5</abbr><abbr title='focal length'>25</abbr></div><abbr title='camera make and model'>Panasonic DMC-GH4</abbr><abbr title='date'>Mon Oct 28 23:04:52 2019</abbr>",
+        thumb: "thumbnails/P1270181.jpg",
+        image: "P1270181.jpg"
+      },
+{
+        title: "P1270186",
+        description: "<div class='film-meta'><abbr title='film speed'>320</abbr><abbr title='exposure'>10/600</abbr><abbr title='aperture'>3.5</abbr><abbr title='focal length'>25</abbr></div><abbr title='camera make and model'>Panasonic DMC-GH4</abbr><abbr title='date'>Mon Oct 28 23:58:34 2019</abbr>",
+        thumb: "thumbnails/P1270186.jpg",
+        image: "P1270186.jpg"
+      },
+{
+        title: "P1270190",
+        description: "<div class='film-meta'><abbr title='film speed'>400</abbr><abbr title='exposure'>10/250</abbr><abbr title='aperture'>3.5</abbr><abbr title='focal length'>25</abbr></div><abbr title='camera make and model'>Panasonic DMC-GH4</abbr><abbr title='date'>Tue Oct 29 00:54:49 2019</abbr>",
+        thumb: "thumbnails/P1270190.jpg",
+        image: "P1270190.jpg"
+      },
+    ]
+
+    Galleria.ready(function() {
+        /*
+        load thumbnails after gallery setup, and download has started
+        for the main images, but before the loading of map tiles starts
+        in the background. This ensures visible elements are prioritised
+        over non-visible elements
+
+        The choice to lazy load thumbnails in batches of 50 was not made
+        scientifically. Other numbers may yield better performance.
+        */
+        this.lazyLoadChunks( 50 );
+
+        this.attachKeyboard({
+            right: this.next,
+            left: this.prev,
+            /* Toggle fullscreen display on press of 'f' key */
+            0x46: this.toggleFullscreen,
+        });
+
+        var gallery = this;
+        $('#fullscreen').click(function() {
+          gallery.toggleFullscreen();
+        });
+
+        $('.icons').appendTo(this.$('container'));
+    });
+
+    Galleria.configure({
+        imageCrop: false,
+        transition: "fade",
+        thumbnails: "lazy"
+    });
+    Galleria.run("#gallery", {dataSource: data});
+
+    </script>
+      </div>
+<footer>
+  <p>
+    <span>Generated by <a href="https://github.com/saimn/sigal">sigal</a></span>
+  </p>
+</footer>    </div>
+  </body>
+</html>
