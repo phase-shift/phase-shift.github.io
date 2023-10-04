@@ -1,4 +1,4 @@
-.container {
+.container {/* container controls the maximum width of the pages*/
   width: 720px;
   margin: 0 auto;
 }
@@ -12,7 +12,7 @@
 }
 
 html {
-  height:100%;
+  height:100%;/*make sure the background doesnt get cut off if we not enuf stuff on one page */
   padding:env(safe-area-inset); /* for iphone notch */
   -webkit-text-size-adjust:100%; /* Prevent font scaling in landscape while allowing user zoom */
 }
